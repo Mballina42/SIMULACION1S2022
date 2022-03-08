@@ -50,4 +50,56 @@ void main(void){
     (validacion==True)?printf("la validacion es verdadera\n"):printf("la validacion es falso\n");
     //if rapido con numero
     (x>2)?printf("el valor ingresado es mayor a 2 \n"):printf("el valor ingresado es menor a 2 \n");
+    //if dentro de otro if
+    if (x!=0)
+    {
+        if (x>3)
+        {
+            printf("si es mayor 3\n");
+        }else
+        {
+            printf("no es mayor 3\n");
+        }
+    }
+    //if anidado
+    if (x>=0 && x<=3)
+    {
+        printf("entre 0 y 3\n");
+    }
+    else if (x==4)
+    {
+        printf("igual a 4\n");
+    }
+    else if (x>4 && x<=10)
+    {
+        printf("entre 4 y 10\n");
+    }
+    //valuar caracteristicas especificas
+    if ((isdigit(x)))
+    {
+        printf("NAN\n");
+    }
+    //el uso de switch
+    switch (letra)
+    {
+    case 'a':
+        puts("vocal a");
+        break;
+    
+    default:
+        puts("otra cosa");
+        break;
+    }
+    //corvertir vocal a mayusculas
+    letra = toupper(letra);
+    switch (letra)
+    {
+    case 'A':
+        puts("vocal A");
+        break;
+    
+    default:
+        puts("otra cosa");
+        break;
+    }
 }
